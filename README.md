@@ -3,6 +3,7 @@
 ## Способ N1
 Код:
 
+<?php
 function ab_test_content() {
   $versions = array('A', 'B'); // Варианты контента (A и B)
   $cookie_name = 'ab_test_version';
@@ -29,7 +30,7 @@ add_shortcode('ab_test', 'ab_test_content');
 
 
 add_filter( 'use_block_editor_for_post', '__return_false' );
-
+?>
 
 
 
